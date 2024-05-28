@@ -7,7 +7,9 @@ cask "picguard" do
   sha256 :no_check
 
   # https://docs.brew.sh/Cask-Cookbook#stanza-url
-  url "https://github.com/picguard/picguard/releases/download/v#{version}/PicGuard.dmg"
+  # https://docs.brew.sh/Cask-Cookbook#when-url-and-homepage-domains-differ-add-verified
+  url "https://github.com/picguard/picguard/releases/download/v#{version}/PicGuard.dmg",
+      verified: "github.com/picguard/picguard/"
   name "PicGuard"
   desc "Your pictures, your signature."
   homepage "https://kjxbyz.com/picguard"
