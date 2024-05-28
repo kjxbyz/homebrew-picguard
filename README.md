@@ -1,5 +1,7 @@
 # homebrew-picguard
 
+[![brew test-bot](https://github.com/picguard/homebrew-picguard/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/picguard/homebrew-picguard/actions/workflows/tests.yml)
+
 ## Install
 
 `brew install picguard/picguard/picguard`
