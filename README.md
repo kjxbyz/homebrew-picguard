@@ -17,7 +17,9 @@ brew "picguard"
 
 ## Debug
 
-`brew livecheck --debug <formula>|<cask>`
+`brew audit --strict --fix --cask picguard`
+
+`brew livecheck --debug picguard`
 
 ## Documentation
 

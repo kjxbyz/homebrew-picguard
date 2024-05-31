@@ -11,18 +11,19 @@ cask "picguard" do
   url "https://github.com/picguard/picguard/releases/download/v#{version}/PicGuard.dmg",
       verified: "github.com/picguard/picguard/"
   name "PicGuard"
-  desc "Your pictures, your signature."
+  desc "Your pictures, your signature"
   homepage "https://kjxbyz.com/picguard"
 
   # Documentation: https://docs.brew.sh/Brew-Livecheck
   livecheck do
     url :url
     strategy :git do |tags|
-      tags.map { |tag|
+      tags.filter_map do |tag|
         match = tag&.match(/^v?(\d+(?:\.\d+)+(\+\d+)?)$/i)
         next if match.blank?
+
         match[1]
-      }.compact
+      end
     end
   end
 
