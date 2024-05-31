@@ -15,6 +15,12 @@ tap "picguard/picguard"
 brew "picguard"
 ```
 
+## Debug
+
+`brew livecheck --debug <formula>|<cask>`
+
 ## Documentation
+
+Your taps are Git repositories located at `$(brew --repository)/Library/Taps`
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
