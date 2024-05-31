@@ -1,25 +1,52 @@
 # homebrew-picguard
 
+> PicGuard for Homebrew.
+
 [![brew test-bot](https://github.com/picguard/homebrew-picguard/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/picguard/homebrew-picguard/actions/workflows/tests.yml)
 
 ## Install
 
-`brew install picguard/picguard/picguard`
+```shell
+brew install picguard/picguard/picguard
+```
 
-Or `brew tap picguard/picguard` and then `brew install picguard`.
+Or
+
+```shell
+brew tap picguard/picguard
+
+brew install picguard
+```
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
+# Brewfile
 tap "picguard/picguard"
 brew "picguard"
 ```
 
 ## Debug
 
-`brew audit --strict --fix --cask picguard`
+[Adding Software to Homebrew](https://docs.brew.sh/Adding-Software-to-Homebrew)
 
-`brew livecheck --debug picguard`
+```shell
+brew audit --strict --fix --cask picguard
+```
+
+[Brew Livecheck](https://docs.brew.sh/Brew-Livecheck)
+
+```shell
+brew livecheck --debug picguard
+```
+
+## Release
+
+[How to Open a Homebrew Pull Request](https://docs.brew.sh/How-To-Open-a-Homebrew-Pull-Request)
+
+```shell
+brew bump --open-pr picguard
+```
 
 ## Documentation
 
