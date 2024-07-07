@@ -1,4 +1,4 @@
-cask "picguard" do
+cask "picguard@1-0-0-plus-295" do
   version "1.0.0+295"
   sha256 "9106a4620a5114c98407d9c23fb84bb95a918e24fbafabc78a9b31afc187dabf"
 

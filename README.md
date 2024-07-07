@@ -1,52 +1,43 @@
 # homebrew-picguard
 
-> PicGuard for Homebrew.
-
-[![brew test-bot](https://github.com/picguard/homebrew-picguard/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/picguard/homebrew-picguard/actions/workflows/tests.yml)
+[![Test](https://github.com/picguard/homebrew-picguard/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/picguard/homebrew-picguard/actions/workflows/test.yml)
+[![Excavator](https://github.com/picguard/homebrew-picguard/actions/workflows/excavator.yml/badge.svg)](https://github.com/picguard/homebrew-picguard/actions/workflows/excavator.yml)
+[![Add version](https://github.com/picguard/homebrew-picguard/actions/workflows/version.yml/badge.svg)](https://github.com/picguard/homebrew-picguard/actions/workflows/version.yml)
 
 ## Install
 
-```shell
-brew install picguard/picguard/picguard
-```
+`brew install picguard/picguard/picguard`
 
-Or
-
-```shell
-brew tap picguard/picguard
-
-brew install picguard
-```
+Or `brew tap picguard/picguard` and then `brew install picguard`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
-# Brewfile
 tap "picguard/picguard"
 brew "picguard"
 ```
 
+## Install a specific version
+
+If you want to install a specific release, you can include the version in the command. You can also view the list of releases [here](https://github.com/picguard/picguard/releases).
+
+```shell
+brew install picguard/picguard/picguard@1-0-0-plus-295
+```
+
+Or
+
+```bash
+brew tap picguard/picguard
+
+brew install picguard@1-0-0-plus-295
+```
+
 ## Debug
 
-[Adding Software to Homebrew](https://docs.brew.sh/Adding-Software-to-Homebrew)
+`brew audit --strict --fix --cask picguard`
 
-```shell
-brew audit --strict --fix --cask picguard
-```
-
-[Brew Livecheck](https://docs.brew.sh/Brew-Livecheck)
-
-```shell
-brew livecheck --debug picguard
-```
-
-## Release
-
-[How to Open a Homebrew Pull Request](https://docs.brew.sh/How-To-Open-a-Homebrew-Pull-Request)
-
-```shell
-brew bump --open-pr picguard
-```
+`brew livecheck --debug picguard`
 
 ## Documentation
 
