@@ -20,9 +20,9 @@ jobs:
           # Optional, will create tap repo fork in organization
           # org: ORG
           # Bump all outdated casks in this tap
-          tap: cyf/homebrew-cyf
+          tap: picguard/homebrew-picguard
           # Bump only these casks if outdated
-          cask: faforever
+          cask: picguard
           # Optional, if don't want to check for already open PRs
           force: false # true
           # Need to set this input if want to use `brew livecheck`
