@@ -6,7 +6,7 @@ cask "picguard@1-0-0-plus-295" do
       verified: "github.com/picguard/picguard/"
   name "PicGuard"
   desc "Your pictures, your signature"
-  homepage "https://kjxbyz.com/picguard"
+  homepage "https://picguard.app"
 
   livecheck do
     url :url
