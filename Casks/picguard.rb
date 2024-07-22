@@ -1,6 +1,6 @@
 cask "picguard" do
-  version "1.0.0+314"
-  sha256 "a078f47cbfad839c0662da5fece6b97c9d931d30bf8395e026a33d16f18139d2"
+  version "1.0.0+317"
+  sha256 "73987f797bad206a92bb76c4b7354b074e95eafde8138fbf31d1584fab89d816"
 
   url "https://github.com/picguard/picguard/releases/download/v#{version}/PicGuard_#{version}_macos_universal.dmg",
       verified: "github.com/picguard/picguard/"
